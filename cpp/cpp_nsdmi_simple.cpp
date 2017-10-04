@@ -9,12 +9,10 @@ private:
 
 public:
 	SimpleType() {
-		std::cout << "SimpleType::ctor, {" << a << ", " << b << ", \"" << name << "\"}" << std::endl;
+		std::cout << "SimpleType::ctor, {" << a << ", " << b << ", \"" << name << "\"}\n";
 	}
-	SimpleType(int aa, int bb) : a(aa), b(bb) {
-		std::cout << "SimpleType::ctor(aa, bb), {" << a << ", " << b << ", \"" << name << "\"}" << std::endl;
-	}
-	~SimpleType() { std::cout << "SimpleType::destructor" << std::endl; }
+
+	~SimpleType() { std::cout << "SimpleType::destructor\n"; }
 };
 
 int main()

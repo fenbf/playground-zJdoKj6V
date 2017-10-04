@@ -9,12 +9,12 @@ private:
 
 public:
 	SimpleType() {
-		std::cout << "SimpleType::ctor, {" << a << ", " << b << ", \"" << name << "\"}" << std::endl;
+		std::cout << "SimpleType::ctor, {" << a << ", " << b << ", \"" << name << "\"}\n";
 	}
 	SimpleType(int aa, int bb) : a(aa), b(bb) {
-		std::cout << "SimpleType::ctor(aa, bb), {" << a << ", " << b << ", \"" << name << "\"}" << std::endl;
+		std::cout << "SimpleType::ctor(aa, bb), {" << a << ", " << b << ", \"" << name << "\"}\n";
 	}
-	~SimpleType() { std::cout << "SimpleType::destructor" << std::endl; }
+	~SimpleType() { std::cout << "SimpleType::destructor\n"; }
 };
 
 class AdvancedType
@@ -24,12 +24,12 @@ private:
 	
 public:
 	AdvancedType() {
-		std::cout << "AdvancedType::ctor" << std::endl;
+		std::cout << "AdvancedType::ctor\n";
 	}
 	AdvancedType(int a) : simple(a, a) {
-		std::cout << "AdvancedType::ctor(a)" << std::endl;
+		std::cout << "AdvancedType::ctor(a)\n";
 	}
-	~AdvancedType() { std::cout << "AdvancedType::destructor" << std::endl; }
+	~AdvancedType() { std::cout << "AdvancedType::destructor\n"; }
 };
 
 int main()
